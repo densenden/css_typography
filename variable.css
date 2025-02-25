@@ -1,0 +1,85 @@
+body {
+    font-family: "giramisu-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wdth" 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e5ddd3 0%, #c4c1bb 100%);
+
+}
+
+.box {
+    font-variation-settings: "slnt" 0, "wdth" 100;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
+li {
+    font-size: 2.5rem;
+    line-height: 5rem;
+    margin: 0;
+    animation: slntAnimation 10s infinite;
+    list-style: none;
+}
+h1 {
+    font-variation-settings: "wdth" 200;
+    font-variation-settings: "slnt" 15;
+    font-size: 6rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 0;
+    max-width: 30vw;
+}
+
+li:hover {
+    font-size: 3rem;
+    animation: slntHoverAnimation 0.5s infinite;
+    cursor: pointer;
+}
+
+@keyframes slntAnimation {
+    0% {
+        font-variation-settings: "slnt" -26;
+    }
+    25% {
+        font-variation-settings: "slnt" -10;
+    }
+    50% {
+        font-variation-settings: "slnt" 0;
+    }
+    75% {
+        font-variation-settings: "slnt" -10;
+    }
+    100% {
+        font-variation-settings: "slnt" -26;
+    }
+}
+
+@keyframes slntHoverAnimation {
+    0% {
+        font-variation-settings: "wdth" 100;
+        font-variation-settings: "slnt" 0;
+    }
+    50% {
+        font-variation-settings: "wdth" 200;
+        font-variation-settings: "slnt" 10;
+    }
+    100% {
+        font-variation-settings: "slnt" 25;
+        font-variation-settings: "wdth" 0;
+    }
+}
+
