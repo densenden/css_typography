@@ -21,6 +21,12 @@
         color: var(--color-darkest);
     }
 
+    header {
+        background: var(--color-lightest);
+        padding: var(--spacing-unit);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
     .projects-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -32,7 +38,7 @@
 
     .project-card {
         background: white;
-        border-radius: 12px;
+        border-radius: 8px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         overflow: hidden;
         transition: transform 0.3s ease;
@@ -73,24 +79,48 @@
     .project-links {
         display: flex;
         gap: 1rem;
+
     }
 
     .demo-btn, .source-btn {
-        padding: 0.75rem 1.5rem;
-        border-radius: 6px;
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        border-radius: 2px;
         text-decoration: none;
-        font-weight: 500;
         transition: all 0.3s ease;
+        border-style: solid;
+        border-width: 2px;
+        border-color: var(--color-light);
+        color: var(--color-light);
     }
 
     .demo-btn {
-        background: var(--color-dark);
-        color: white;
+
     }
 
     .source-btn {
-        background: var(--color-light);
-        color: white;
+
+    }
+
+    .demo-btn:hover, .source-btn:hover {
+        transform: translateY(-3px);
+        font-variation-settings: "wght" 600;
+        border-color: var(--color-darkest);
+        color: var(--color-darkest);
+
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        padding: var(--spacing-unit);
+        color: var(--color-darkest);
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--color-lightest);
     }
 
     @media (min-width: 768px) {
