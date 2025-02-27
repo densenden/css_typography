@@ -56,7 +56,7 @@ body {
     backface-visibility: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: co;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.5px;
