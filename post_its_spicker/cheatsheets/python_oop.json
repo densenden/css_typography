@@ -1,0 +1,11 @@
+[
+  {"front": "Class Definition", "back": "class MyClass:\n    def __init__(self, name):\n        self.name = name", "shortcut": "N/A"},
+  {"front": "Create Object", "back": "obj = MyClass('Python')", "shortcut": "N/A"},
+  {"front": "Instance Method", "back": "def greet(self):\n    print(f'Hello {self.name}')", "shortcut": "N/A"},
+  {"front": "Inheritance", "back": "class Child(MyClass):\n    pass", "shortcut": "N/A"},
+  {"front": "Encapsulation", "back": "class MyClass:\n    def __init__(self, name):\n        self._name = name", "shortcut": "N/A"},
+  {"front": "Polymorphism", "back": "class Dog(MyClass):\n    def greet(self):\n        print('Woof!')", "shortcut": "N/A"},
+  {"front": "Abstract Class", "back": "from abc import ABC, abstractmethod\nclass Animal(ABC):\n    @abstractmethod\n    def sound(self):\n        pass", "shortcut": "N/A"},
+  {"front": "Class Method", "back": "@classmethod\ndef method(cls):\n    pass", "shortcut": "N/A"},
+  {"front": "Static Method", "back": "@staticmethod\ndef method():\n    pass", "shortcut": "N/A"}
+]

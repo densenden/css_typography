@@ -1,0 +1,12 @@
+[
+  {"front": "Declare a variable (let)", "back": "let x = 10;", "shortcut": "N/A"},
+  {"front": "Declare a constant", "back": "const PI = 3.14;", "shortcut": "N/A"},
+  {"front": "Define a function", "back": "function greet() {\n    return 'Hello';\n}", "shortcut": "N/A"},
+  {"front": "Arrow function", "back": "const greet = () => 'Hello';", "shortcut": "N/A"},
+  {"front": "Event listener", "back": "document.getElementById('btn').addEventListener('click', () => alert('Clicked!'));", "shortcut": "N/A"},
+  {"front": "Fetch API", "back": "fetch('https://api.example.com').then(response => response.json()).then(data => console.log(data));", "shortcut": "N/A"},
+  {"front": "Loop through array", "back": "arr.forEach(item => console.log(item));", "shortcut": "N/A"},
+  {"front": "Check if element exists", "back": "if (document.getElementById('id')) {}", "shortcut": "N/A"},
+  {"front": "Local storage", "back": "localStorage.setItem('key', 'value');", "shortcut": "N/A"},
+  {"front": "JSON parsing", "back": "let obj = JSON.parse('{\"name\": \"John\"}');", "shortcut": "N/A"}
+]

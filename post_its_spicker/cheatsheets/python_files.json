@@ -1,0 +1,17 @@
+
+[
+  {"front": "Select All Columns", "back": "SELECT * FROM <table_name>;", "shortcut": "N/A"},
+  {"front": "Select Specific Columns", "back": "SELECT column1, column2 FROM <table_name>;", "shortcut": "N/A"},
+  {"front": "Insert Data", "back": "INSERT INTO <table_name> (column1, column2) VALUES (value1, value2);", "shortcut": "N/A"},
+  {"front": "Update Data", "back": "UPDATE <table_name> SET column1 = value1 WHERE condition;", "shortcut": "N/A"},
+  {"front": "Delete Data", "back": "DELETE FROM <table_name> WHERE condition;", "shortcut": "N/A"},
+  {"front": "Create Table", "back": "CREATE TABLE <table_name> (column1 datatype, column2 datatype);", "shortcut": "N/A"},
+  {"front": "Drop Table", "back": "DROP TABLE <table_name>;", "shortcut": "N/A"},
+  {"front": "Alter Table", "back": "ALTER TABLE <table_name> ADD column_name datatype;", "shortcut": "N/A"},
+  {"front": "Join Tables", "back": "SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.id;", "shortcut": "N/A"},
+  {"front": "Group By", "back": "SELECT column, COUNT(*) FROM <table_name> GROUP BY column;", "shortcut": "N/A"},
+  {"front": "Order By", "back": "SELECT * FROM <table_name> ORDER BY column ASC/DESC;", "shortcut": "N/A"},
+  {"front": "Where Clause", "back": "SELECT * FROM <table_name> WHERE condition;", "shortcut": "N/A"},
+  {"front": "Limit Results", "back": "SELECT * FROM <table_name> LIMIT 10;", "shortcut": "N/A"},
+  {"front": "Drop Column", "back": "ALTER TABLE <table_name> DROP COLUMN column_name;", "shortcut": "N/A"}
+]

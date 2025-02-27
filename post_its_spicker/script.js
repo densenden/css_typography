@@ -2,7 +2,7 @@ async function loadContent() {
         const response = await fetch('content.json');
         const content = await response.json();
 
-        const container = document.querySelector('.postits-container');
+        const container = docxument.querySelector('.postits-container');
         const postits = content.map(item => `
             <div class="postit" tabindex="0">
                 <div class="postit-wrapper">

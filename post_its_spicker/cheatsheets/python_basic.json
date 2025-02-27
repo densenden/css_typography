@@ -1,0 +1,14 @@
+[
+  {"front": "Print Statement", "back": "print('Hello, World!')", "shortcut": "N/A"},
+  {"front": "Variable Declaration", "back": "x = 5", "shortcut": "N/A"},
+  {"front": "If Statement", "back": "if x > 10:\n    print('Greater')", "shortcut": "N/A"},
+  {"front": "For Loop", "back": "for i in range(5):\n    print(i)", "shortcut": "N/A"},
+  {"front": "While Loop", "back": "while x > 0:\n    x -= 1\n    print(x)", "shortcut": "N/A"},
+  {"front": "Function Definition", "back": "def func():\n    return 'Hello'", "shortcut": "N/A"},
+  {"front": "List", "back": "my_list = [1, 2, 3]", "shortcut": "N/A"},
+  {"front": "Dictionary", "back": "my_dict = {'key': 'value'}", "shortcut": "N/A"},
+  {"front": "Import Module", "back": "import math", "shortcut": "N/A"},
+  {"front": "String Formatting", "back": "f'Hello {name}'", "shortcut": "N/A"},
+  {"front": "Try-Except", "back": "try:\n    x = 1 / 0\nexcept ZeroDivisionError:\n    print('Error')", "shortcut": "N/A"},
+  {"front": "Lambda Function", "back": "lambda x: x + 10", "shortcut": "N/A"}
+]

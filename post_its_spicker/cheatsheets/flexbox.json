@@ -1,0 +1,15 @@
+[
+  {"front": "Flex Container", "back": "display: flex;", "shortcut": "N/A"},
+  {"front": "Align Items (center)", "back": "align-items: center;", "shortcut": "N/A"},
+  {"front": "Align Items (stretch)", "back": "align-items: stretch;", "shortcut": "N/A"},
+  {"front": "Justify Content (center)", "back": "justify-content: center;", "shortcut": "N/A"},
+  {"front": "Flex Direction (row)", "back": "flex-direction: row;", "shortcut": "N/A"},
+  {"front": "Flex Direction (column)", "back": "flex-direction: column;", "shortcut": "N/A"},
+  {"front": "Flex Wrap", "back": "flex-wrap: wrap;", "shortcut": "N/A"},
+  {"front": "Align Self", "back": "align-self: center;", "shortcut": "N/A"},
+  {"front": "Flex Grow", "back": "flex-grow: 1;", "shortcut": "N/A"},
+  {"front": "Flex Shrink", "back": "flex-shrink: 1;", "shortcut": "N/A"},
+  {"front": "Flex Basis", "back": "flex-basis: 50%;", "shortcut": "N/A"},
+  {"front": "Align Content", "back": "align-content: center;", "shortcut": "N/A"},
+  {"front": "Order", "back": "order: 1;", "shortcut": "N/A"}
+]

@@ -1,0 +1,12 @@
+[
+  {"front": "Basic HTML structure", "back": "<!DOCTYPE html>\n<html>\n<head>\n<title>Title</title>\n</head>\n<body>\n</body>\n</html>", "shortcut": "N/A"},
+  {"front": "Link CSS file", "back": "<link rel='stylesheet' href='styles.css'>", "shortcut": "N/A"},
+  {"front": "Div container", "back": "<div class='container'>Content</div>", "shortcut": "N/A"},
+  {"front": "Center text (CSS)", "back": "text-align: center;", "shortcut": "N/A"},
+  {"front": "Flexbox container", "back": "display: flex;\njustify-content: center;\nalign-items: center;", "shortcut": "N/A"},
+  {"front": "Grid container", "back": "display: grid;\ngrid-template-columns: 1fr 1fr;", "shortcut": "N/A"},
+  {"front": "Media query", "back": "@media (max-width: 768px) { body { background: gray; } }", "shortcut": "N/A"},
+  {"front": "Hover effect", "back": "button:hover { background: red; }", "shortcut": "N/A"},
+  {"front": "Rounded corners", "back": "border-radius: 10px;", "shortcut": "N/A"},
+  {"front": "Box shadow", "back": "box-shadow: 2px 2px 5px rgba(0,0,0,0.2);", "shortcut": "N/A"}
+]

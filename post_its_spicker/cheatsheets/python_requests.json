@@ -1,0 +1,11 @@
+[
+  {"front": "Install requests module", "back": "pip install requests", "shortcut": "N/A"},
+  {"front": "Import requests", "back": "import requests", "shortcut": "N/A"},
+  {"front": "Send a GET request", "back": "response = requests.get('https://api.example.com')", "shortcut": "N/A"},
+  {"front": "Send a POST request", "back": "response = requests.post('https://api.example.com', json={'key': 'value'})", "shortcut": "N/A"},
+  {"front": "Get response status code", "back": "response.status_code", "shortcut": "N/A"},
+  {"front": "Get response JSON data", "back": "response.json()", "shortcut": "N/A"},
+  {"front": "Set headers in request", "back": "headers = {'Authorization': 'Bearer TOKEN'}\nresponse = requests.get(url, headers=headers)", "shortcut": "N/A"},
+  {"front": "Handle request timeout", "back": "response = requests.get(url, timeout=5)", "shortcut": "N/A"},
+  {"front": "Download a file", "back": "response = requests.get(url)\nwith open('file.jpg', 'wb') as f: f.write(response.content)", "shortcut": "N/A"}
+]
