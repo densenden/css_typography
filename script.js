@@ -11,6 +11,10 @@ async function loadProjects() {
         {
             folder: 'slanted_menu',
             github: 'https://github.com/densenden/css_typography/tree/main/slanted_menu'
+        },
+        {
+            folder: 'post_its_spicker',
+            github: 'https://github.com/densenden/css_typography/tree/main/post_its_spicker'
         }
     ];
 

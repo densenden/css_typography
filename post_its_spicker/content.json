@@ -1,0 +1,22 @@
+[
+  {"front": "Initialize Repository", "back": "git init", "shortcut": "N/A"},
+  {"front": "Clone Repository", "back": "git clone <repo_url>", "shortcut": "N/A"},
+  {"front": "Stage All Changes", "back": "git add .", "shortcut": "Cmd+K"},
+  {"front": "Commit Changes", "back": "git commit -m \"Commit message\"", "shortcut": "Cmd+K"},
+  {"front": "Push to Remote", "back": "git push origin main", "shortcut": "Cmd+Shift+K"},
+  {"front": "Pull Updates", "back": "git pull", "shortcut": "Cmd+T"},
+  {"front": "Create Branch", "back": "git branch <branch_name>", "shortcut": "N/A"},
+  {"front": "Switch Branch", "back": "git checkout <branch_name>", "shortcut": "N/A"},
+  {"front": "Merge Branch", "back": "git merge <branch_name>", "shortcut": "N/A"},
+  {"front": "Stash Changes", "back": "git stash", "shortcut": "N/A"},
+  {"front": "View Status", "back": "git status", "shortcut": "Cmd+9"},
+  {"front": "View Logs", "back": "git log --oneline", "shortcut": "N/A"},
+  {"front": "Add Remote", "back": "git remote add origin <url>", "shortcut": "N/A"},
+  {"front": "Undo Last Commit", "back": "git reset HEAD~1", "shortcut": "N/A"},
+  {"front": "Discard Changes", "back": "git checkout -- <file>", "shortcut": "N/A"},
+  {"front": "Create Tag", "back": "git tag -a v1.0 -m \"Version 1.0\"", "shortcut": "N/A"},
+  {"front": ".gitignore Template", "back": "*.log\n__pycache__/\nenv/", "shortcut": "N/A"},
+  {"front": "Rebase Branch", "back": "git rebase main", "shortcut": "N/A"},
+  {"front": "View Remotes", "back": "git remote -v", "shortcut": "N/A"},
+  {"front": "Fetch Updates", "back": "git fetch --all", "shortcut": "N/A"}
+]
