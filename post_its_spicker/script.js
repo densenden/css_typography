@@ -1,40 +1,38 @@
 async function loadContent() {
-    const response = await fetch('content.json');
-    const content = await response.json();
+        const response = await fetch('content.json');
+        const content = await response.json();
 
-    const container = document.querySelector('.postits-container');
-    const postits = content.map(item => `
-        <div class="postit" tabindex="0">
-            <div class="postit-inner">
-                <div class="postit-front">${item.front}</div>
-                <div class="postit-back">
-                <button class="copy-btn" onclick="copyToClipboard('${item.back}', this)">
-                    <span class="copy-icon">📋</span>
-                    <span class="copied-icon" style="display: none;">✔️</span>
-                    </button>
-                     <p>${item.back}</p>
-
-                    <p class="postit-shortcut">${item.shortcut}</p>
-
+        const container = document.querySelector('.postits-container');
+        const postits = content.map(item => `
+            <div class="postit" tabindex="0">
+                <div class="postit-wrapper">
+                    <div class="postit-front">${item.front}</div>
+                    <div class="postit-back">
+                        <p class="postit-back-title">${item.front}</p>
+                        <button class="copy-btn" onclick="copyToClipboard('${item.back}', this)">
+                            <span class="copy-icon">📋</span>
+                            <p>${item.back}</p>
+                        </button>
+                        <p class="postit-shortcut">${item.shortcut}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    `).join('');
+        `).join('');
+        container.innerHTML = postits;
+    }
 
-    container.innerHTML = postits;
-}
+    function copyToClipboard(text, button) {
+        // Reset all buttons first
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.classList.remove('copied');
+            btn.querySelector('.copy-icon').textContent = '📋';
+        });
 
-function copyToClipboard(text, button) {
-    navigator.clipboard.writeText(text).then(() => {
-        const copyIcon = button.querySelector('.copy-icon');
-        const copiedIcon = button.querySelector('.copied-icon');
-        copyIcon.style.display = 'none';
-        copiedIcon.style.display = 'inline';
-        setTimeout(() => {
-            copyIcon.style.display = 'inline';
-            copiedIcon.style.display = 'none';
-        }, 2000);
-    });
-}
+        // Copy and mark current button
+        navigator.clipboard.writeText(text).then(() => {
+            button.classList.add('copied');
+            button.querySelector('.copy-icon').textContent = '✔️';
+        });
+    }
 
-document.addEventListener('DOMContentLoaded', loadContent);
+    document.addEventListener('DOMContentLoaded', loadContent);
