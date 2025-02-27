@@ -1,0 +1,27 @@
+/* Root Variables */
+:root {
+    --color-green: #5fb864;
+    --color-gray: #f6f6f6;
+
+}
+
+body {
+    background-color: var(--color-gray);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--color-green);
+    height: 80px;
+    text-align: center;
+    color: white;
+}
+h1 {
+    line-height: 80px;
+}
+
+h2 {
+    color: var(--color-green);
+    margin-top: 0;
+}
+

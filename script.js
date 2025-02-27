@@ -13,6 +13,10 @@ async function loadProjects() {
             github: 'https://github.com/densenden/css_typography/tree/main/slanted_menu'
         },
         {
+            folder: 'rebuild_exercise',
+            github: 'https://github.com/densenden/css_typography/tree/main/rebuild_exercise'
+        },
+        {
             folder: 'post_its_spicker',
             github: 'https://github.com/densenden/css_typography/tree/main/post_its_spicker'
         }
