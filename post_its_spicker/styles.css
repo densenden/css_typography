@@ -73,6 +73,10 @@ body {
 
 .postit-back {
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 1rem;
     font-variation-settings: "INKT" 0, "slnt" 0, "wdth" 100, "wght" 200;
 
@@ -81,6 +85,23 @@ body {
 .postit-shortcut {
     font-size: 0.5rem;
     font-variation-settings: "INKT" 0, "slnt" 0, "wdth" 200, "wght" 200;
+}
+
+.copy-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: var(--post-it-yellow);
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.copy-btn .copy-icon,
+.copy-btn .copied-icon {
+    font-size: 1rem;
 }
 
 @media (max-width: 768px) {
