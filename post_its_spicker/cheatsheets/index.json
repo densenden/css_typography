@@ -1,0 +1,11 @@
+[
+    { "value": "flexbox", "label": "CSS Flexbox" },
+    { "value": "github", "label": "GitHub Commands" },
+    { "value": "html_css_basic", "label": "HTML & CSS Basics" },
+    { "value": "javascript_basic", "label": "JavaScript Basics" },
+    { "value": "python_basic", "label": "Python Basics" },
+    { "value": "python_files", "label": "Python File Operations" },
+    { "value": "python_oop", "label": "Python OOP" },
+    { "value": "python_requests", "label": "Python Requests" },
+    { "value": "sql", "label": "SQL Commands" }
+]

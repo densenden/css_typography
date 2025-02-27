@@ -26,6 +26,15 @@
         grid-template-columns: repeat(auto-fill, minmax(var(--postit-size), 1fr));
         gap: 3rem 2rem;
         max-width: 100%;
+        height: 90vh;
+    }
+
+    header {
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 
     .postit {
@@ -120,6 +129,7 @@
 
     .copy-btn p {
         margin: 0;
+        font-size: 0.5rem;
     }
 
 .menu {
