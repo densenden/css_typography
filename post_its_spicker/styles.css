@@ -69,11 +69,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 1em;
         box-sizing: border-box;
         font-size: 1rem;
-        font-weight: 600;
         letter-spacing: 0.5px;
         border-radius: 1px;
         background: var(--post-it-yellow);
@@ -88,6 +87,7 @@
         border-top: var(--border-height) solid var(--post-it-border);
         transform: rotateY(180deg);
         font-variation-settings: "INKT" 0, "slnt" 0, "wdth" 100, "wght" 200;
+        position: relative;
     }
 
     .postit-shortcut {
@@ -95,10 +95,19 @@
         font-variation-settings: "INKT" 0, "slnt" 0, "wdth" 200, "wght" 200;
     }
 
-    .postit-back-title {
-        font-variation-settings: "INKT" 0, "slnt" 15, "wdth" 200, "wght" 900;
-        font-size: 0.5rem;
-    }
+.postit-back-title {
+    position: absolute;
+    top: calc(-1 * var(--border-height));
+    left: 0;
+    right: 0;
+    height: var(--border-height);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.5rem;
+}
 
     .copy-btn {
         margin-top: 0.2rem;
@@ -108,8 +117,8 @@
         align-items: center;
         flex-direction: column;
         gap: 0.1rem;
-        min-width: 5rem;
-        min-height: 5rem;
+        min-width: 8rem;
+        min-height: 6rem;
         border-radius: 2px;
         border: none;
         background: var(--post-it-yellow);
@@ -168,6 +177,6 @@
 
     @media (min-width: 769px) {
         .postits-container {
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
     }
