@@ -19,7 +19,7 @@ async function loadProjects() {
         {
             folder: 'post_its_spicker',
             github: 'https://github.com/densenden/css_typography/tree/main/post_its_spicker'
-        }
+        },
         {
             folder: 'fixed_form_video',
             github: 'https://github.com/densenden/css_typography/tree/main/fixed_form_video'
