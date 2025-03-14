@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* Höhe für Scroll-Effekt */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.spacer {
+    height: 100vh; /* Platz zum Scrollen */
+}
+
+/* Äußere Form (wird von Quadrat zu Kreis) */
+.shape {
+    width: 450px;
+    height: 450px;
+    background-color: #3498db;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0%;
+    transition: border-radius 0.3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Quadrat bleibt innerhalb */
+.video {
+    width: 500px;
+    height: 500px;
+    object-fit: fill;
+}
+
+/* Veränderung durch Scrollen */
+body {
+    --scroll: 0;
+}
+
+.shape {
+    border-radius: calc(var(--scroll) * 50%);
+}
+
+/* Scroll-Animation mit CSS */
+@supports (animation-timeline: scroll()) {
+    .shape {
+        animation-timeline: scroll();
+        animation-range: 0vh 100vh;
+        animation-name: morph;
+    }
+
+    @keyframes morph {
+        0% {
+            border-radius: 0%;
+        }
+        100% {
+            border-radius: 50%;
+        }
+    }
+}
